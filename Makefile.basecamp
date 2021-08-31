@@ -1,7 +1,7 @@
 NGINX_VERSION=1.21.1
-UBUNTU_VERSION=20.04
+UBUNTU_VERSION=18.04
 FPM_VERSION=1.13.1
-PKG_ITERATION=1~focal
+PKG_ITERATION=1~bionic
 
 default:
 	make build-minimal-ubuntu

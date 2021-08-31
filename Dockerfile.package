@@ -12,7 +12,7 @@ RUN gem install fpm --no-document -v $fpm_version
 ARG nginx_version
 ARG ubuntu_version
 ARG pkg_iteration
-# depends from nginx_1.20.1-1~bionic_amd64.deb
+# depends copied from nginx_1.20.1-1~bionic_amd64.deb
 RUN fpm \
     --input-type dir \
     --output-type deb \
