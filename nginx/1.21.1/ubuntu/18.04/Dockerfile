@@ -10,13 +10,13 @@
 #############################
 # Settings Common Variables #
 #############################
-FROM ubuntu:20.04 AS base
+FROM ubuntu:18.04 AS base
 
 ARG DOCKER_IMAGE=fabiocicerchia/nginx-lua
 ENV DOCKER_IMAGE=$DOCKER_IMAGE
 ARG DOCKER_IMAGE_OS=ubuntu
 ENV DOCKER_IMAGE_OS=$DOCKER_IMAGE_OS
-ARG DOCKER_IMAGE_TAG=20.04
+ARG DOCKER_IMAGE_TAG=18.04
 ENV DOCKER_IMAGE_TAG=$DOCKER_IMAGE_TAG
 
 ARG BUILD_DATE
