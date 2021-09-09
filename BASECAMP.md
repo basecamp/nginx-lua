@@ -9,15 +9,18 @@ A custom build for Basecamp.
 * `brew install gawk`
 
 # Build
-
 ```
 make -f Makefile.basecamp
 ```
+This will build nginx+lua in docker, run tests on the image then produce an installable .deb that we
+can combine with our bc_nginx Chef cookbook to manage the installation, service config, and
+logrotation.
 
 # Bump nginx-lua itself
 
 * Merge upstream, squash any merge conflicts by maintaining our specific Ubuntu version.
-* Update `Makefile.basecamp` with the latest `NGINX_VERSION`. If it hasn't changed, bump the `PKG_ITERATION`.
+* Update `Makefile.basecamp` with the latest `NGINX_VERSION`. If it hasn't changed, bump the
+  `PKG_ITERATION`.
 * Build it per above.
 
 # Bumping nginx Version
@@ -33,5 +36,6 @@ make -f Makefile.basecamp
 
 * Update the `UBUNTU_VERSION` and `PKG_ITERATION` in `Makefile.basecamp`.
 * Update the `UBUNTU` version in `supported_versions`.
-* Copy the old distro version in `./nginx/<latest>/ubuntu/<version>` into the new one. Update the references in the `Dockerfile`.
+* Copy the old distro version in `./nginx/<latest>/ubuntu/<version>` into the new one. Update the
+  references in the `Dockerfile`.
 * Build it per above.
