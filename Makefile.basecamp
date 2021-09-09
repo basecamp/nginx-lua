@@ -5,6 +5,7 @@ PKG_ITERATION=1~bionic
 
 default:
 	make build-minimal-ubuntu
+	make test-ubuntu
 	docker build \
 	  -f Dockerfile.package \
 	  -t package-nginx \
