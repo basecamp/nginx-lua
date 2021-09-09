@@ -3,6 +3,8 @@
 ![nginx logo](https://github.com/fabiocicerchia/nginx-lua/raw/main/docs/logo-nginx.png)
 ![lua logo](https://github.com/fabiocicerchia/nginx-lua/raw/main/docs/logo-lua.png)
 
+[For Basecamp specific changes see here](BASECAMP.md).
+
 ---
 
 [![MIT License](https://img.shields.io/badge/License-MIT-lightgrey.svg?longCache=true)](LICENSE)
@@ -448,17 +450,17 @@ Provides Nginx + Lua + extra lua modules. Uses pinned version for Alpine, Amazon
 
 ### `fabiocicerchia/nginx-lua:<version>-minimal`
 
-Provides Nginx + Lua image. Uses Alpine for base image.  
+Provides Nginx + Lua image. Uses Alpine for base image.
 **WARNING:** Not available as tag, need manual build, see [Minimal Image](#minimal-image)
 
 ### `fabiocicerchia/nginx-lua:<version>-<distro>-minimal`
 
-Provides Nginx + Lua. Uses Alpine, Amazon Linux, CentOS, Debian, Fedora, Ubuntu for base image.  
+Provides Nginx + Lua. Uses Alpine, Amazon Linux, CentOS, Debian, Fedora, Ubuntu for base image.
 **WARNING:** Not available as tag, need manual build, see [Minimal Image](#minimal-image)
 
 ### `fabiocicerchia/nginx-lua:<version>-<distro><version>-minimal`
 
-Provides Nginx + Lua. Uses pinned version for Alpine, Amazon Linux, CentOS, Debian, Fedora, Ubuntu for base image.  
+Provides Nginx + Lua. Uses pinned version for Alpine, Amazon Linux, CentOS, Debian, Fedora, Ubuntu for base image.
 **WARNING:** Not available as tag, need manual build, see [Minimal Image](#minimal-image)
 
 ## Minimal Image
