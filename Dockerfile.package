@@ -32,6 +32,7 @@ RUN fpm \
     --depends "libssl3 (>= 3.0.0~~alpha1)" \
     --depends "zlib1g (>= 1:1.1.4)" \
     --depends "lsb-base (>= 3.0-6)" \
+    --depends "libmaxminddb0 (>= 1.5.2)" \
     --depends adduser \
     --chdir / \
     etc/nginx \
