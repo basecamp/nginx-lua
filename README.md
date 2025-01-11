@@ -1,5 +1,7 @@
 # nginx-lua Ubuntu Package Output
 
+**[Now moved here](https://github.com/basecamp/37s-nginx-lua-builder)**
+
 A custom build for Basecamp. This is not the upstream README, you can find that [here](https://github.com/fabiocicerchia/nginx-lua)
 
 # Requirements
